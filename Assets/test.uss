@@ -1,0 +1,20 @@
+.textData {
+    font-size: 60px;
+    color: rgb(255, 180, 0);
+    transition-duration: 0.2s;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-width: -2px;
+    border-right-width: -2px;
+    border-bottom-width: -2px;
+    border-left-width: -2px;
+}
+
+.testVisual {
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}

@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Label text="Champion Main Script" display-tooltip-when-elided="true" name="Title" style="font-size: 20px; -unity-text-align: upper-center; margin-bottom: 10px; background-color: rgb(67, 67, 67); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); padding-left: 0; padding-right: 0; padding-top: 5px; padding-bottom: 5px;" />
+    <ui:Label text="This Inspector is created with UIBuilder" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+    <ui:VisualElement name="Basic_Information" style="flex-direction: row; margin-bottom: 10px; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; background-color: rgba(0, 0, 0, 0); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); margin-top: 10px;">
+        <ui:VisualElement name="Portrait_VisualElement" style="width: auto; height: auto; flex-shrink: 0; flex-grow: 0.2;" />
+        <ui:VisualElement name="Info" style="flex-grow: 1; align-items: stretch; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+            <ui:Label text="Information" display-tooltip-when-elided="true" style="width: 100%; -unity-text-align: upper-center; margin-bottom: 10px;" />
+            <ui:TextField picking-mode="Ignore" label="Name" value="filler text" name="Name_TextField" binding-path="m_name" style="width: 100%;" />
+            <uie:ObjectField label="Portrait" name="Portrait_ObjectField" type="UnityEngine.Sprite, UnityEngine.CoreModule" binding-path="m_portraitSprite" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Toggle label="Has Class" name="HasClass_Toggle" binding-path="m_hasAClass" />
+    <uie:EnumField label="Type Of Class" value="Center" name="TypeOfClass_Enum" binding-path="m_type" />
+    <ui:Foldout text="Default Inspector" name="DefaultInspector_FoldOut" style="display: none;" />
+</ui:UXML>
